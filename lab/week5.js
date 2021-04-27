@@ -13,13 +13,22 @@
 // - Homework: Complete the application by accepting a number of days; show the current weather 
 //             conditions and forecast based on the number of days entered by the user.
 
+// 2412bf0eb981480d96e155623212704
+  // #location
+  // #days
+  // .get-weather
+  // .current
+  // .forecast
+
 window.addEventListener('DOMContentLoaded', async function() {
   // Get a reference to the "get weather" button
+  let getB = document.querySelector(`.get-weather`)
 
   // When the "get weather" button is clicked:
-
+  getB.addEventListener('click', async function(event) {
     // - Ignore the default behavior of the button
-
+    event.preventDefault()
+    
     // - Get a reference to the element containing the user-entered location
 
     // - Get the user-entered location from the element's value
@@ -37,4 +46,6 @@ window.addEventListener('DOMContentLoaded', async function() {
       // - Store the interpreted location, current weather conditions, the forecast as three separate variables
 
       // - Continue the recipe yourself!
+
+    })
 })
